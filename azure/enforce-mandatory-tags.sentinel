@@ -20,7 +20,7 @@ allAzureVMs = plan.find_resources("azurerm_linux_virtual_machine")
 # Filter to Azure VMs with violations
 # Warnings will be printed for all violations since the last parameter is true
 violatingAzureVMs = plan.filter_attribute_not_contains_list(allAzureVMs,
-                        "tags", mandatory_tags, true)
+                        "tags", mandatory_tags, true )
 
 #Main rule
 main = rule {
